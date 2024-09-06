@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cocktail Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="dist/coctailCard.js" defer></script>
+  </head>
+
+  <body>
+    <h2>Find your favorite cocktail:</h2>
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search cocktails..."
+      />
+      <button class="search-button">
+        <img src="photos/search.png" alt="Search Icon" />
+      </button>
+    </div>
+    <div class="container">
+      <div class="listResult">
+        <h2>Results:</h2>
+        <ul id="cocktailList">
+          <!-- <li id="resultsItem"> <span id="resultName">Name: </span><span id="resultId">ID: </span> </li> -->
+        </ul>
+      </div>
+
+      <div class="box" id="cocktail">
+        <h3 id="cocktailName">Let's find Cocktail</h3>
+      </div>
+      <div class="column">
+        <div class="box" id="specification">
+          <ul>
+            <h4>Specification</h4>
+            <li><span id="drinkId"></span></li>
+            <li><span id="alkoholicYorN"></span></li>
+            <li><span id="cocktailCategory"></span></li>
+          </ul>
+        </div>
+
+        <div class="box" id="ingredients">
+          <ul id="ingredientsList">
+            <h3>Ingredients</h3>
+          </ul>
+        </div>
+        <div class="box" id="preparation">
+          <h3>Preparation</h3>
+          <p id="preparationField"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
